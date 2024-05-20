@@ -3,9 +3,17 @@ type: docker
 name: default
 
 steps:
-  - name: build
+  - name: install
     image: node
     commands:
       - npm install
+
+  - name: test
+    image: node
+    commands:
       - npm test
-    
+
+trigger:
+  event:
+    - push
+    - pull_request
