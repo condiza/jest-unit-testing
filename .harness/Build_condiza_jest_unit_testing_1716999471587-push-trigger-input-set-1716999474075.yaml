@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_condiza_jest_unit_testing_1716999471587-push-trigger-input-set
+  identifier: Build_condiza_jest_unit_testing_1716999471587pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_condiza_jest_unit_testing_1716999471587
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
